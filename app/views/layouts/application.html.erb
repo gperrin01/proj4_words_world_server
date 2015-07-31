@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>What3games</title>
+  <title>What3G SERVER</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -10,7 +10,10 @@
 </head>
 <body>
 
-  <div id="user_nav">
+<h3>This page's sole purpose is to my server - nothing will happen here</h3>
+<h3><a href="https://stark-brushlands-1089.herokuapp.com/">Click here to access the real app</h3>
+
+<!--   <div id="user_nav">
    <% if current_user %>
      Logged in as <%= current_user.email %>.
      <%= link_to "Log out", destroy_user_session_path, :method => :delete %>
@@ -18,7 +21,7 @@
      <%= link_to "Sign up", new_user_registration_path %> or
      <%= link_to "log in", new_user_session_path %>
    <% end %>
- </div>
+ </div> -->
 
 <%= yield %>
 
